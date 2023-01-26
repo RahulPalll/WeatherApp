@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+  </head>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+}
+
+#weather-info {
+    display: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+button[type="button"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #0069d9;
+}
+
+#weather-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#weather-info p {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+
+
+  </style>
+  <body>
+    <h1>Weather App</h1>
+    <form>
+      <label for="location">Enter a location:</label>
+      <input type="text" id="location" name="location">
+      <button type="button" id="search-btn">Search</button>
+    </form>
+    <div id="weather-info"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
